@@ -12,39 +12,41 @@
 <body class="bg-white font-paragraph_sans">
     <!-- md:px-[5vw] -->
     <main class="w-full min-h-screen flex flex-col items-center">
-        <nav class="md:px-[5vw] flex items-center w-full gap-6">
-            <img src="/images/logo.svg" alt="logo" />
+        <nav class="md:px-[5vw] flex items-center w-full gap-12 py-8">
+            <img src="/images/logo.svg" alt="logo" class="h-8" />
             <div class="flex-grow"></div>
             <button class="text-c_Desaturated_Blue font-heading_btn_nav text-sm">Features</button>
             <button class="text-c_Desaturated_Blue font-heading_btn_nav text-sm">Team</button>
             <button class="text-c_Desaturated_Blue font-heading_btn_nav text-sm">Sign in</button>
         </nav>
-        <div class="w-full md:px-[5vw] grid grid-cols-2 gap-8">
-            <div class="flex flex-col">
-                <h1>All your files in one secure location, accessible anywhere.</h1>
-                <p>
+        <div class="w-full md:px-[5vw] grid grid-cols-2 gap-8 items-center py-8">
+            <div class="flex flex-col gap-5">
+                <h1 class="font-heading_btn_nav text-[2.2rem] font-bold md">All your files in one secure location,
+                    accessible anywhere.</h1>
+                <p class="pr-20">
                     Fylo stores your most important files in one secure location.
                     Access them wherever you need, share and collaborate with friends,
                     family, and co-workers.
                 </p>
-                <div class="flex gap-4">
-                    <input type="text">
-                    <button>Get Started</button>
+                <div class="flex gap-4 w-[80%]">
+                    <input placeholder="Enter your email..." type="text"
+                        class="min-w-0 border-[1px] border-c_Very_Dark_Blue px-4 py-3 text-xs flex-grow">
+                    <button class="text-xs bg-c_Bright_Blue text-white font-bold px-12 rounded">Get Started</button>
                 </div>
             </div>
             <div>
                 <img src="/images/illustration-1.svg" alt="">
             </div>
         </div>
-        <img src="/images/bg-curve-desktop.svg" alt="" class="w-full">
-        <div class="md:px-[5vw] bg-c_Light_Grayish_Blue w-full flex items-center">
-            <div class="flex flex-col flex-grow w-[60%]">
-                <h2>Stay productive, wherever you are</h2>
-                <p>
+        <img src="/images/bg-curve-desktop.svg" alt="" class="w-full mt-16">
+        <div class="md:px-[5vw] bg-c_Light_Grayish_Blue w-full flex items-center pt-12 pb-24">
+            <div class="flex flex-col flex-grow w-[60%] gap-5">
+                <h2 class="font-heading_btn_nav text-[2.2rem] font-bold">Stay productive, wherever you are</h2>
+                <p class="w-[80%]">
                     Never let location be an issue when accessing your files. Fylo has you
                     covered for all of your file storage needs.
                 </p>
-                <p>
+                <p class="w-[80%]">
                     Securely share files and folders with friends, family and colleagues for
                     live collaboration. No email attachments required!
                 </p>
@@ -52,37 +54,37 @@
                     class="flex items-center gap-1 text-c_Moderate_Cyan border-b-[1px] w-fit border-c_Moderate_Cyan">See
                     how Fylo works <img src="/images/icon-arrow.svg" alt="" class="translate-y-[1px]"></button>
                 <div
-                    class="bg-white rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] px-6 py-4 flex flex-col md:max-w-[20rem] text-sm">
-                    <img src="/images/icon-quotes.svg" class="w-4" alt="">
-                    <p>
+                    class="bg-white rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-4 px-6 py-4 flex flex-col md:max-w-[18rem] text-sm gap-3">
+                    <img src="/images/icon-quotes.svg" class="w-3 translate-y-1" alt="">
+                    <p class="text-xs leading-5">
                         Fylo has improved our team productivity by an order of magnitude. Since
                         making the switch our team has become a well-oiled collaboration machine.
                     </p>
                     <div class="flex items-center gap-2">
                         <img src="/images/avatar-testimonial.jpg" class="size-6 rounded-full" alt="">
-                        <div class="flex flex-col">
-                            <span class="text-[0.7rem] font-bold">Kyle Burton</span>
-                            <span class="text-[0.5rem]">Founder & CEO, Huddle</span>
+                        <div class="flex flex-col gap-1">
+                            <span class="text-[0.7rem] leading-[0.7rem] font-bold">Kyle Burton</span>
+                            <span class="text-[0.5rem] leading-[0.5rem]">Founder & CEO, Huddle</span>
                         </div>
                     </div>
                 </div>
             </div>
             <img src="/images/illustration-2.svg" alt="" class="w-[40vw]">
         </div>
-        <div class="w-full bg-c_Desaturated_Blue grid grid-cols-2 md:px-[5vw]">
-            <div class="flex flex-col">
-                <h2>Get early access today</h2>
-                <p>
+        <div class="w-full bg-c_Desaturated_Blue grid grid-cols-2 md:px-[5vw] py-20">
+            <div class="flex flex-col gap-4">
+                <h2 class="font-heading_btn_nav text-white font-bold text-3xl">Get early access today</h2>
+                <p class="text-white w-[80%]">
                     It only takes a minute to sign up and our free starter tier is extremely generous.
                     If you have any questions, our support team would be happy to help you.
                 </p>
             </div>
-            <div class="flex flex-col">
-                <input type="text">
-                <button class="w-fit">Get Started For Free</button>
+            <div class="flex flex-col pl-12 gap-3">
+                <input type="text" class="w-[80%] text-xs py-3 px-4 rounded outline-none" placeholder="email@example.com" />
+                <button class="w-fit bg-c_Bright_Blue text-white text-xs py-3 px-6 rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)]">Get Started For Free</button>
             </div>
         </div>
-        <footer class="flex flex-col bg-c_Very_Dark_Blue w-full md:px-[5vw] text-xs">
+        <footer class="flex flex-col bg-c_Very_Dark_Blue w-full md:px-[5vw] text-xs py-20 gap-6">
             <div>
                 <img src="/images/logo.svg" alt="" class="h-8 aspect-auto brightness-0 invert">
             </div>
@@ -145,7 +147,8 @@
                     <button class="text-white text-left">Terms</button>
                     <button class="text-white text-left">Privacy</button>
                 </div>
-                <div class="flex md:items-start items-center md:w-fit w-full md:justify-normal justify-center gap-2 md:py-0 pt-8">
+                <div
+                    class="flex md:items-start items-center md:w-fit w-full md:justify-normal justify-center gap-2 md:py-0 pt-8">
                     <div role="button"
                         class="size-6 cursor-pointer transition flex items-center justify-center rounded-full border-[1px] border-white">
                         <svg class="size-3" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
