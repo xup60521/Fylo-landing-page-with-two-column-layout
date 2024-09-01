@@ -21,17 +21,23 @@
         </nav>
         <div class="w-full md:px-[5vw] flex flex-col-reverse md:grid grid-cols-2 gap-8 items-center py-8">
             <div class="flex flex-col md:gap-5 gap-6 md:items-start items-center px-8">
-                <h1 class="font-heading_btn_nav md:text-[2.2rem] text-2xl md:text-left text-center font-bold md">All your files in one secure location,
+                <h1 class="font-heading_btn_nav md:text-[2.2rem] text-2xl md:text-left text-center font-bold md">All
+                    your files in one secure location,
                     accessible anywhere.</h1>
                 <p class="md:pr-20 md:text-left text-center  md:text-[1rem] text-sm">
                     Fylo stores your most important files in one secure location.
                     Access them wherever you need, share and collaborate with friends,
                     family, and co-workers.
                 </p>
-                <div class="flex md:gap-4 gap-3 md:w-[80%] md:flex-row flex-col w-full">
-                    <input placeholder="Enter your email..." type="text"
-                        class="min-w-0 border-[1px] border-c_Very_Dark_Blue px-4 py-3 text-xs flex-grow">
-                    <button class="text-xs bg-c_Bright_Blue text-white py-3 font-bold px-12 rounded">Get Started</button>
+                <div class="flex md:gap-4 gap-3 md:w-[80%] md:flex-row flex-col w-full relative">
+                    <input id="email-input1" placeholder="Enter your email..." type="text"
+                        class="min-w-0 border-[1px] outline-none border-c_Very_Dark_Blue px-4 py-3 text-xs flex-grow">
+                    <span style="display: none;" id="error-msg1"
+                        class="md:absolute md:my-0 -my-2 text-red-500 text-[0.6rem] md:-bottom-4">Please check your
+                        email</span>
+                    <button id="submit-email1"
+                        class="text-xs bg-c_Bright_Blue transition hover:bg-opacity-75 text-white py-3 font-bold px-12 rounded">Get
+                        Started</button>
                 </div>
             </div>
             <div>
@@ -40,9 +46,11 @@
         </div>
         <img src="/images/bg-curve-desktop.svg" alt="desktop curve" class="w-full mt-16 md:block hidden">
         <img src="/images/bg-curve-mobile.svg" alt="mobile curve" class="w-full mt-16 md:hidden">
-        <div class="md:px-[5vw] px-5 bg-c_Light_Grayish_Blue w-full flex md:flex-row flex-col-reverse items-center pt-12 pb-24">
+        <div
+            class="md:px-[5vw] px-5 bg-c_Light_Grayish_Blue w-full flex md:flex-row flex-col-reverse items-center pt-12 pb-24">
             <div class="flex flex-col flex-grow md:w-[60%] w-full gap-5 md:items-start items-center md:py-0 pt-20">
-                <h2 class="font-heading_btn_nav md:text-[2.2rem] text-lg md:text-left text-center font-bold">Stay productive, wherever you are</h2>
+                <h2 class="font-heading_btn_nav md:text-[2.2rem] text-lg md:text-left text-center font-bold">Stay
+                    productive, wherever you are</h2>
                 <p class="md:w-[80%] md:text-[1rem] text-sm pr-2">
                     Never let location be an issue when accessing your files. Fylo has you
                     covered for all of your file storage needs.
@@ -72,17 +80,26 @@
             </div>
             <img src="/images/illustration-2.svg" alt="" class="md:w-[40vw]">
         </div>
-        <div class="w-full bg-c_Desaturated_Blue md:grid flex flex-col md:items-start items-center grid-cols-2 md:px-[5vw] px-5 md:py-20 py-12">
+        <div
+            class="w-full bg-c_Desaturated_Blue md:grid flex flex-col md:items-start items-center grid-cols-2 md:px-[5vw] px-5 md:py-20 py-12">
             <div class="flex flex-col gap-4 w-full">
-                <h2 class="font-heading_btn_nav text-white font-bold text-lg md:text-left text-center md:text-3xl">Get early access today</h2>
+                <h2 class="font-heading_btn_nav text-white font-bold text-lg md:text-left text-center md:text-3xl">Get
+                    early access today</h2>
                 <p class="text-white md:w-[80%] md:text-left text-center md:text-[1rem] text-sm md:px-0 px-6">
                     It only takes a minute to sign up and our free starter tier is extremely generous.
                     If you have any questions, our support team would be happy to help you.
                 </p>
             </div>
             <div class="flex flex-col md:pl-12 md:gap-2 gap-1 md:w-full w-[70%] md:py-0 pt-6">
-                <input type="text" class="md:w-[80%] md:text-xs text-[0.5rem] md:py-3 py-2 px-4 rounded outline-none" placeholder="email@example.com" />
-                <button class="md:w-fit text-center bg-c_Bright_Blue text-white md:text-xs text-[0.5rem] md:py-3 py-2 px-8 rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)]">Get Started For Free</button>
+                <input id="email-input2" type="text"
+                    class="md:w-[80%] md:text-xs text-[0.5rem] border-[2px] border-transparent md:py-3 py-2 px-4 rounded outline-none"
+                    placeholder="email@example.com" />
+                <span style="display: none;" id="error-msg2"
+                    class="text-white -mt-1 text-[0.6rem] md:-bottom-4">Please check your
+                    email</span>
+                <button id="submit-email2"
+                    class="md:w-fit text-center transition hover:bg-opacity-50 bg-c_Bright_Blue text-white md:text-xs text-[0.5rem] md:py-3 py-2 px-8 rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)]">Get
+                    Started For Free</button>
             </div>
         </div>
         <footer class="flex flex-col bg-c_Very_Dark_Blue w-full md:px-[5vw] px-8 md:text-xs py-20 gap-6">
@@ -151,7 +168,7 @@
                 <div
                     class="flex md:items-start items-center md:w-fit w-full md:justify-normal justify-center gap-2 md:py-0 pt-8">
                     <div role="button"
-                        class="size-6 cursor-pointer transition flex items-center justify-center rounded-full border-[1px] border-white">
+                        class="size-6 cursor-pointer transition hover:bg-c_Bright_Blue hover:border-c_Bright_Blue flex items-center justify-center rounded-full border-[1px] border-white">
                         <svg class="size-3" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -174,7 +191,7 @@
                         </svg>
                     </div>
                     <div role="button"
-                        class="size-6 cursor-pointer transition flex items-center justify-center rounded-full border-[1px] border-white">
+                        class="size-6 cursor-pointer transition hover:bg-c_Bright_Blue hover:border-c_Bright_Blue flex items-center justify-center rounded-full border-[1px] border-white">
                         <svg class="size-3" viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -197,7 +214,7 @@
                         </svg>
                     </div>
                     <div role="button"
-                        class="size-6 cursor-pointer transition flex items-center justify-center rounded-full border-[1px] border-white">
+                        class="size-6 cursor-pointer transition hover:bg-c_Bright_Blue hover:border-c_Bright_Blue flex items-center justify-center rounded-full border-[1px] border-white">
                         <svg class="size-3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
